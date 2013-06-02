@@ -47,7 +47,7 @@ function($, _, Backbone) {
         },
         render: function(template, context) {
             context = context || (this.model && this.model.toJSON()) 
-                || (this.collection && this.collection.toJSON());
+                || (this.collection && this.collection.toJSON()) || {};
             return template(context);
         }
     });

@@ -13,6 +13,7 @@ function(
         initialize: function(){
             this.render();
         },
+        tagName: 'tr',
         template: '#alerts-config-row'
     });
 });
