@@ -1,19 +1,16 @@
 define([
     'backbone',
-    'plugins/backbone.layoutmanager',
-    'bb/model.presentation-config',
-
+    'plugins/backbone.layoutmanager'
 ],
 
 function(
 	Backbone,
-	Layout,
-	mPresentationConfig
+	Layout
 ) {
     'use strict';
   
     return Backbone.Layout.extend({
-        template: '#presentation-config',
+        template: '#alerts-config-row',
         initialize: function(){
 
         }
