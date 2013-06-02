@@ -22,6 +22,7 @@ function($, _, Backbone) {
     // Localize or create a new JavaScript Template object.
     var JST = window.JST = window.JST || {};
 
+    /*
     // Configure LayoutManager with Backbone Boilerplate defaults.
     Backbone.LayoutManager.configure({
         paths: {
@@ -41,6 +42,10 @@ function($, _, Backbone) {
             return JST[path];
         }
     });
+    */
+
+    //app.get("/*/",function(req,res){/*...*/});
+
 
     // Mix Backbone.Events, modules, and layout management into the app object.
     return _.extend(app, {
@@ -82,4 +87,5 @@ function($, _, Backbone) {
         }
     }, Backbone.Events);
 
+    
 });

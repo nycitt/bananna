@@ -1,6 +1,6 @@
 {
-  "name": "yobbb",
-  "version": "0.0.0",
+  "name": "bananna",
+  "version": "0.0.1",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -32,7 +32,7 @@
 		"restify":	"*"
   },
 	"scripts": {
-		"start": "supervisor api/server.js & ./node_modules/.bin/grunt server"
+		"start": "supervisor api/server.js & grunt server"
 	},
   "engines": {
     "node": ">=0.8.0"

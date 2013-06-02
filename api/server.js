@@ -10,12 +10,13 @@ var restify = require('restify'),
 	DB connection 
 */
 var mongoose = require('mongoose'),
-		db = mongoose.connect("mongodb://localhost/angel");
+		db = mongoose.connect("mongodb://localhost/banana");
 
 
 /* 
 	Models 
 */
+
 // Provisions
 var provisionSchema = new db.Schema({
 	title: String,
@@ -24,6 +25,7 @@ var provisionSchema = new db.Schema({
 	time_ended: Date
 });
 var	Provision = db.model('provisions', provisionSchema);
+
 // Votes
 var voteSchema = new db.Schema({
 	metric: String,

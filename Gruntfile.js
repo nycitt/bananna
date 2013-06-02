@@ -38,8 +38,10 @@ module.exports = function (grunt) {
             livereload: {
                 files: [
                     '<%= yeoman.app %>/*.html',
+                    '{.tmp,<%= yeoman.app %>}/templates/layouts/{,*/}*.hb',
                     '{.tmp,<%= yeoman.app %>}/styles/{,*/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
+                    '{.tmp,<%= yeoman.app %>}/scripts/bb/{,*/}*.js',
                     '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}'
                 ],
                 tasks: ['livereload']
@@ -101,6 +103,7 @@ module.exports = function (grunt) {
                 '!<%= yeoman.app %>/scripts/vendor/*',
                 '!<%= yeoman.app %>/scripts/libs/*',
                 '!<%= yeoman.app %>/scripts/plugins/*',
+                '!<%= yeoman.app %>/scripts/bb/*',
                 'test/spec/{,*/}*.js'
             ]
         },

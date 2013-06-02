@@ -8,7 +8,12 @@ require([
     'router'
 ],
 
-function (app, Backbone, $, Router) {
+function (
+    app, 
+    Backbone, 
+    $, 
+    Router
+) {
     'use strict';
     // Define your master router on the application namespace and trigger all
     // navigation from this instance.
@@ -37,5 +42,6 @@ function (app, Backbone, $, Router) {
             Backbone.history.navigate(href, true);
         }
     });
+
 
 });
