@@ -1,3 +1,13 @@
 @import "h5bp.css";
 @import "bootstrap.css";
 
+.header {
+  width: 100%;
+}
+.header td {
+  vertical-align: middle;
+}
+.header-right {
+  width: 5%;
+  white-space: nowrap;
+}
