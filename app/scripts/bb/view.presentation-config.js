@@ -1,8 +1,7 @@
 define([
     'backbone',
     'plugins/backbone.layoutmanager',
-    'bb/model.presentation-config',
-
+    'bb/model.presentation-config'
 ],
 
 function(
