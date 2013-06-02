@@ -27,3 +27,7 @@ a {
 .observer-controls a {
   margin-right: 1em;
 }
+
+.alerts-config {
+  margin: 2em 0;
+}
