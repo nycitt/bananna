@@ -22,29 +22,34 @@ function($, _, Backbone) {
     // Localize or create a new JavaScript Template object.
     var JST = window.JST = window.JST || {};
 
-    /*
     // Configure LayoutManager with Backbone Boilerplate defaults.
     Backbone.LayoutManager.configure({
         paths: {
             layout: 'templates/layouts/',
             template: 'templates/'
         },
-
         fetch: function(path) {
-            path = path + '.html';
+            path = path + '.hb';
+            path = path.replace('#', '');
+
+            console.log(path);
 
             if (!JST[path]) {
-                $.ajax({ url: app.root + path, async: false }).then(function(contents) {
-                    JST[path] = _.template(contents);
+                $.ajax({ 
+                    url: app.root + path, 
+                    async: false 
+                }).then(function(contents) {
+                    JST[path] = Handlebars.compile(contents);
                 });
             }
 
             return JST[path];
+        },
+        render: function(template, context) {
+            context = context || {};
+            return template(context);
         }
     });
-    */
-
-    //app.get("/*/",function(req,res){/*...*/});
 
 
     // Mix Backbone.Events, modules, and layout management into the app object.

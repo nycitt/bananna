@@ -5,14 +5,17 @@ require([
     'jquery',
 
     // Main Router.
-    'router'
+    'router',
+
+    'handlebars'
 ],
 
 function (
     app, 
     Backbone, 
     $, 
-    Router
+    Router,
+    Handlebars
 ) {
     'use strict';
     // Define your master router on the application namespace and trigger all
