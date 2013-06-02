@@ -75,11 +75,11 @@
 
         <script type="template" id="alerts-config-row">
             <td>
-                <span class="label">{{name}}</span>
-                <input type="checkbox" name="show_live" checked="checked"/>
+                <span class="label">{{metric_label}}</span>
+                <input type="checkbox" name="show_live" {{#if show_live}}checked="checked"{{/if}}/>
             </td>
             <td>
-                <input type="number" name="threshold_{{class}}" value="3"/>
+                <input type="number" class="alert_threshold" value="{{alert_threshold}}"/>
             </td>
         </script>
 
