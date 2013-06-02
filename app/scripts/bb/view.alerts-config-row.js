@@ -10,9 +10,9 @@ function(
     'use strict';
   
     return Backbone.Layout.extend({
-        template: '#alerts-config-row',
         initialize: function(){
             this.render();
-        }
+        },
+        template: '#alerts-config-row'
     });
 });

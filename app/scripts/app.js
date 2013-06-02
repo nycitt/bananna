@@ -46,7 +46,8 @@ function($, _, Backbone) {
             return JST[path];
         },
         render: function(template, context) {
-            context = context || {};
+            context = context || (this.model && this.model.toJSON()) 
+                || (this.collection && this.collection.toJSON());
             return template(context);
         }
     });
