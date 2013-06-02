@@ -1,6 +1,14 @@
 @import "h5bp.css";
 @import "bootstrap.css";
 
+body {
+  font-size: 110%;
+}
+
+a {
+  cursor: pointer;
+}
+
 .header {
   width: 100%;
 }
@@ -10,4 +18,12 @@
 .header-right {
   width: 5%;
   white-space: nowrap;
+}
+
+.observer-controls {
+  margin-top: 1em;
+}
+
+.observer-controls a {
+  margin-right: 1em;
 }
